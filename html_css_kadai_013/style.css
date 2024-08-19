@@ -95,6 +95,10 @@ p {
     display: none;
   }
 
+  #nav-sp:target {
+    display: block;
+  }
+
   #close {
     position: absolute;
     top: 20px;
@@ -128,14 +132,5 @@ p {
 
   #nav-sp a:hover {
     text-decoration: underline;
-  }
-
-  /* スマートフォン用メニュー表示のトリガー */
-  a[href="#nav-sp"] {
-    display: inline-block;
-  }
-
-  a[href="#"] {
-    display: inline-block;
   }
 }
