@@ -2,6 +2,7 @@
 body {
     font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
       sans-serif;
+      overflow-y: hidden;/* 縦のスクロールバーを表示しない */
   }
   
   p {
