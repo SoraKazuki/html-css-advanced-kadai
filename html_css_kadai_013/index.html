@@ -24,29 +24,29 @@
     </nav>
 
     <!-- スマートフォン用ハンバーガーメニュー -->
-    <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <a id="menu-sp" href="#nav-sp">
       <img src="images/button-menu.png" alt="ナビゲーションを開く">
-    </button>
+    </a>
 
     <!-- スマートフォン用ナビゲーション -->
-    <nav id="nav-sp" style="display: none;">
-      <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+    <nav id="nav-sp">
+      <a id="close" href="#">
         <img src="images/button-close.png" alt="ナビゲーションを閉じる">
-      </button>
+      </a>
       <ul>
         <li>
-          <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          <a id="logo-sp" href="index.html">
             <img src="images/logo-sp.png" alt="トップページに戻る">
           </a>
         </li>
         <li>
-          <a class="menu" href="index.html#concept" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+          <a class="menu" href="index.html#concept">CONCEPT</a>
         </li>
         <li>
-          <a class="menu" href="index.html#product" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+          <a class="menu" href="index.html#product">PRODUCT</a>
         </li>
         <li>  
-          <a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a> 
+          <a class="menu" href="index.html#contact">CONTACT</a> 
         </li>
       </ul>
     </nav>

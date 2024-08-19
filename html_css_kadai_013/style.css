@@ -80,7 +80,7 @@ p {
     float: right;
     padding: 0;
     border: none;
-    background: none; /* ボタンのデフォルトスタイルをリセット */
+    background: none;
   }
 
   #nav-sp {
@@ -90,17 +90,14 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    display: none;
-    z-index: 1000; /* 高い値に設定 */
-    padding: 20px; /* 画面端に近づけない */
+    z-index: 1000;
+    padding: 20px;
   }
 
   #close {
     position: absolute;
     top: 20px;
     right: 20px;
-    border: none;
-    background: none; /* ボタンのデフォルトスタイルをリセット */
   }
 
   #logo-sp {
@@ -113,7 +110,7 @@ p {
   }
 
   #nav-sp li {
-    list-style: none; /* liの点を消す */
+    list-style: none;
   }
 
   #nav-sp a {
