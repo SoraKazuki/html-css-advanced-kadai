@@ -92,6 +92,7 @@ p {
     width: 100%;
     z-index: 1000;
     padding: 20px;
+    display: none;
   }
 
   #close {
@@ -127,5 +128,14 @@ p {
 
   #nav-sp a:hover {
     text-decoration: underline;
+  }
+
+  /* スマートフォン用メニュー表示のトリガー */
+  a[href="#nav-sp"] {
+    display: inline-block;
+  }
+
+  a[href="#"] {
+    display: inline-block;
   }
 }
