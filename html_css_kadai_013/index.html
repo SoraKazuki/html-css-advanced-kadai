@@ -12,42 +12,26 @@
   <!-- ヘッダー -->
   <header>
     <!-- ロゴ -->
-    <a href="index.html" id="logo">
-      <img src="images/logo.png" alt="トップページに戻る">
-    </a>
+    <img id="logo" src="images/logo.png" alt="トップページに戻る" onclick="window.location.href='index.html'">
 
     <!-- PC用ナビゲーション -->
     <nav id="nav-pc">
-      <a href="index.html#concept">CONCEPT</a>
-      <a href="index.html#product">PRODUCT</a>
-      <a href="index.html#contact">CONTACT</a>
+      <button onclick="window.location.href='index.html#concept'">CONCEPT</button>
+      <button onclick="window.location.href='index.html#product'">PRODUCT</button>
+      <button onclick="window.location.href='index.html#contact'">CONTACT</button>
     </nav>
 
     <!-- スマートフォン用ハンバーガーメニュー -->
-    <a href="#nav-sp">
-      <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く">
-    </a>
+    <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
 
     <!-- スマートフォン用ナビゲーション -->
     <nav id="nav-sp">
-      <a href="#close" id="close">
-        <img src="images/button-close.png" alt="ナビゲーションを閉じる">
-      </a>
+      <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+      <img id="logo-sp" src="images/logo-sp.png" alt="トップページに戻る" onclick="window.location.href='index.html'">
       <ul>
-        <li>
-          <a id="logo-sp" href="index.html">
-            <img src="images/logo-sp.png" alt="トップページに戻る">
-          </a>
-        </li>
-        <li>
-          <a class="menu" href="index.html#concept">CONCEPT</a>
-        </li>
-        <li>
-          <a class="menu" href="index.html#product">PRODUCT</a>
-        </li>
-        <li>  
-          <a class="menu" href="index.html#contact">CONTACT</a> 
-        </li>
+        <li><button onclick="window.location.href='index.html#concept'">CONCEPT</button></li>
+        <li><button onclick="window.location.href='index.html#product'">PRODUCT</button></li>
+        <li><button onclick="window.location.href='index.html#contact'">CONTACT</button></li>
       </ul>
     </nav>
   </header>

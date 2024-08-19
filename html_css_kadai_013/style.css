@@ -26,6 +26,7 @@ p {
   header {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* 中央揃え */
   }
 
   /* ナビゲーションのレイアウト */
@@ -36,23 +37,18 @@ p {
   }
 
   /* ナビゲーションのリンクの装飾設定 */
-  #nav-pc > a {
-    text-decoration: none;
-    margin-left: 20px;
-  }
-
-  #nav-pc > a:link,
-  #nav-pc > a:visited {
+  #nav-pc > button {
+    background: none;
+    border: none;
+    font-size: 14px;
     color: #0d0d0d;
+    margin-left: 20px;
+    cursor: pointer;
   }
 
-  #nav-pc > a:hover {
+  #nav-pc > button:hover {
     color: #0d0d0d;
     text-decoration: underline;
-  }
-
-  #nav-pc > a:active {
-    color: #0d0d0d;
   }
 
   /* スマートフォン用メニューを非表示 */
@@ -90,13 +86,17 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
+    display: none;
     z-index: 1000;
     padding: 20px;
-    display: none;
   }
 
-  #nav-sp:target {
-    display: block;
+  #nav-sp ul {
+    padding-left: 0;
+  }
+
+  #nav-sp li {
+    list-style: none;
   }
 
   #close {
@@ -110,27 +110,24 @@ p {
     margin: 80px 0 30px 20px;
   }
 
-  #nav-sp ul {
-    padding-left: 0;
-  }
-
-  #nav-sp li {
-    list-style: none;
-  }
-
-  #nav-sp a {
+  #nav-sp button {
     display: block;
     font-size: 16px;
     color: #ffffff;
-    text-decoration: none;
-    margin: 20px 0;
-    height: 44px;
-    background-image: url("images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: right center;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
   }
 
-  #nav-sp a:hover {
+  #nav-sp button:hover {
     text-decoration: underline;
+  }
+
+  /* スマートフォン用ナビゲーションがターゲット時に表示 */
+  #nav-sp:target {
+    display: block;
   }
 }
